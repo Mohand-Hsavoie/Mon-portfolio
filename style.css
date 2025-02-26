@@ -1,100 +1,77 @@
-/* Import Google Font pour un style moderne */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+/* Importation de la police */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
 
 /* Styles généraux */
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #F5F9FF; /* Bleu ciel très clair */
-    color: #333; /* Gris foncé pour une bonne lisibilité */
+    background: linear-gradient(to bottom, #e3f2fd, #ffffff);
+    color: #333;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+}
+
+/* En-tête */
+header {
+    background: #2196F3;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Conteneur principal */
 .container {
     width: 90%;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 0;
 }
 
-/* Header */
-header {
-    background-color: #FFFFFF;
-    padding: 20px 0;
-    text-align: center;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-    color: #007BFF; /* Bleu ciel plus foncé pour dynamisme */
-    font-weight: 600;
-}
-
-/* Navigation */
-nav {
-    text-align: center;
-    padding: 10px 0;
-}
-
-nav a {
-    color: #007BFF;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: 600;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #0056b3;
-}
-
-/* Section principale */
-main {
-    background: #FFFFFF;
+/* Sections */
+.section {
+    background: white;
     padding: 30px;
-    margin-top: 20px;
+    margin-bottom: 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-    color: #0056b3;
-    font-weight: 600;
+/* Titres */
+h1, h2, h3 {
+    color: #1976D2;
 }
 
-p {
-    font-size: 18px;
-    color: #444;
-    margin-bottom: 15px;
+/* Liens */
+a {
+    color: #1976D2;
+    text-decoration: none;
+    transition: 0.3s;
+}
+a:hover {
+    color: #0D47A1;
 }
 
 /* Boutons */
-button, .btn {
-    background: #007BFF;
+.btn {
+    background: #1976D2;
     color: white;
-    border: none;
     padding: 12px 20px;
-    font-size: 16px;
     border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
+    display: inline-block;
+    transition: 0.3s;
 }
-
-button:hover, .btn:hover {
-    background: #0056b3;
+.btn:hover {
+    background: #0D47A1;
 }
 
 /* Pied de page */
 footer {
     text-align: center;
     padding: 20px;
-    margin-top: 20px;
-    background: #FFFFFF;
-    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
-}
-
-footer p {
+    background: #f1f1f1;
+    font-size: 0.9rem;
     color: #666;
+    margin-top: 30px;
 }
