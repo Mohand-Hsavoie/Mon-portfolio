@@ -14,15 +14,35 @@ header {
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #0073e6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 section {
-    padding: 1rem 2rem;
+    padding: 2rem;
 }
 
-.project {
+.project-card, .blog-post {
     background: #fff;
     margin: 1rem 0;
     padding: 1rem;
@@ -36,13 +56,4 @@ footer {
     background: #333;
     color: #fff;
     margin-top: 2rem;
-}
-
-a {
-    color: #0073e6;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
 }
